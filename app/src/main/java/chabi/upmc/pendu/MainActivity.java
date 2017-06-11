@@ -149,6 +149,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             builder.setTitle("Vous avez perdu !");
             builder.setMessage("Le mot à trouver était :  " + word);
         }
+        else{
+            builder.setTitle("Vous avez GAGNE !");
+        }
         builder.setPositiveButton(getResources().getString(R.string.replay), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
