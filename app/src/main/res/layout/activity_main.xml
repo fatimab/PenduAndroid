@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity"
+    >
+
+    <!-- Lettres utilisées -->
+    <TextView
+        android:id="@+id/tv_lettres_tapees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        android:textSize="18dp"
+        />
+    <!-- Image du pendu -->
+    <ImageView
+        android:id="@+id/iv_pendu"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200dp"
+        android:background="@drawable/first"
+        />
+    <!-- Lettres a trouver -->
+    <LinearLayout
+        android:id="@+id/word_container"
+        android:layout_below="@+id/iv_pendu"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/word_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:id="@+id/et_letter"
+            android:maxLength="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:text="@string/send"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

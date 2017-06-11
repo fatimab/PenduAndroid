@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pendu</string>
+    <string name="send">Envoyer</string>
+    <string name="replay">Rejouer</string>
+</resources>
